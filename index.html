@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clasificador de Evidencias OVNI</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <img src="img/Logo OVNI.png" alt="Logo" class="logo">
+    <h1>Sistema de Desclasificacion</h1>
+    <p>Evaluacion y Analisis de Fenomenos Aereos No Identificados</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#simulador">Simulador</a></li>
+      <li><a href="https://www.war.gov/ufo/?releaseDate=Release+02" target="_blank">Archivo Oficial</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="simulador">
+      <h2>Clasificador de Evidencias OVNI</h2>
+      <p>Introduce los datos del avistamiento para calcular el nivel de confiabilidad de la evidencia.</p>
+
+      <form id="formulario-ovni">
+        
+        <div class="campo">
+          <label for="nombre-reporte">Nombre del reporte:</label>
+          <input type="text" id="nombre-reporte" placeholder="Ej. Caso Roswell" required>
+        </div>
+
+        <div class="campo">
+          <label for="lugar">Lugar del avistamiento:</label>
+          <input type="text" id="lugar" placeholder="Ej. Bolivia" required>
+        </div>
+
+        <div class="campo">
+          <label for="testigos">Cantidad de testigos:</label>
+          <input type="number" id="testigos" min="0" placeholder="0" required>
+        </div>
+
+        <div class="campo">
+          <label for="video">¿Existe video?</label>
+          <select id="video" required>
+            <option value="">Selecciona una opcion</option>
+            <option value="yes">Si</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="imagen">¿Existe imagen?</label>
+          <select id="imagen" required>
+            <option value="">Selecciona una opcion</option>
+            <option value="yes">Si</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="radar">¿Fue detectado por radar?</label>
+          <select id="radar" required>
+            <option value="">Selecciona una opcion</option>
+            <option value="yes">Si</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="explicacion">¿Hay explicacion cientifica probable?</label>
+          <select id="explicacion" required>
+            <option value="">Selecciona una opcion</option>
+            <option value="yes">Si</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="descripcion">Descripcion breve:</label>
+          <textarea id="descripcion" rows="4" placeholder="Describe los detalles del fenómeno..." required></textarea>
+        </div>
+
+        <div class="botones">
+          <button type="submit" id="btn-evaluar">Evaluar Evidencia</button>
+          <button type="reset" id="btn-reiniciar">Reiniciar Formulario</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="seccion-resultado" class="oculto">
+      <h3>Resultado del Analisis</h3>
+      <div id="resultado-contenedor">
+        <p id="clasificacion-texto">Clasificación: <span id="rango">N/A</span></p>
+        <p id="recomendacion">Recomendación: <span id="mensaje-sugerencia">N/A</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Examen Recuperatorio Programación Web I</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
