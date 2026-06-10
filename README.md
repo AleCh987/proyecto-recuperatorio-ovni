@@ -4,7 +4,7 @@
 
 Este proyecto es una aplicación web interactiva desarrollada como examen recuperatorio para la materia de Programación Web I. Su objetivo es simular un sistema gubernamental de clasificación de Fenómenos Aéreos No Identificados (FANI / OVNIs).
 
-🔗 **[Ver la página web publicada aquí](https://github.com/AleCh987/proyecto-recuperatorio-ovni)**
+🔗 **[Ver la página web publicada aquí](https://alech987.github.io/proyecto-recuperatorio-ovni/)**
 
 ## 📋 Descripción del Proyecto
 El sistema funciona como un "Simulador de Clasificación de Evidencia OVNI". Permite a un investigador ingresar los datos de un avistamiento a través de un formulario estructurado, procesar esa información y devolver un nivel de confiabilidad (Débil, Moderado o Fuerte) basándose en parámetros preestablecidos de validación de evidencia.
